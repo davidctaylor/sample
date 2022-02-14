@@ -1,0 +1,17 @@
+.address-detail-container {
+  .address-title {
+    text-align: center;
+    margin: 0.5em;
+  }
+  .address-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+    margin: 0.5em;
+  }
+  .address-col {
+    flex: 1; 
+  }
+}

@@ -1,0 +1,11 @@
+<div class="address-detail-container">
+  <div class="address-title">AddressBookDetail</div>
+
+  <div *ngIf="adressEntry"></div>
+  <div *ngIf="adressEntry" class="address-row">
+    <div class="address-col">{{adressEntry.name.first}}</div>
+    <div class="address-col">{{adressEntry.name.last}}</div>
+    <div class="address-col">{{adressEntry.phone}}</div>
+  </div>
+  <div *ngIf="!adressEntry">Address book entry not provided</div>
+</div>

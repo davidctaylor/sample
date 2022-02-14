@@ -1,0 +1,15 @@
+<div class="address-list-container">
+  <div class="address-title">AddressBookList</div>
+
+  <ng-container *ngIf="addressList | async as data">
+    <div (click)="handleClickAddress(address)" class="address-row" *ngFor="let address of data">
+      <div class="address-col">{{address.name.first}}</div>
+      <div class="address-col">{{address.name.last}}</div>
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="addressListError | async as error">
+    <div>Unable to load address book data</div>
+  </ng-container>
+</div>
+
